@@ -55,3 +55,32 @@ p {
 footer.page-footer {
   margin: 0;
 }
+
+.intro-text {
+  text-align: center;
+  padding-top: 10%;
+  padding-bottom: 8%;
+
+}
+.intro-text h2 {
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.intro-text h5 {
+  text-transform: uppercase;
+  font-weight: normal;
+  display: inline-block;
+}
+
+.tabs .tab a{
+  color: #1e88e5;
+}
+
+.tabs .tab a:hover{
+  color: #90caf9;
+}
+
+.tabs .indicator {
+  background-color: #42a5f5;
+}
