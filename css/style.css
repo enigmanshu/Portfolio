@@ -84,15 +84,8 @@ footer.page-footer {
 .tabs .indicator {
   background-color: #42a5f5;
 }
-/*
-.card .card-image img {
-  display: block;
-  border-radius: 2px 2px 0 0;
-  position: relative;
-  left: 0;
-  right: 0;
-  top: 20%;
-  bottom: 0;
-  width: 100%;
-}
-*/
+
+.waves-effect.waves-blue .waves-ripple {
+      background-color: rgba(179, 229, 252, 0.65);
+    }
+
