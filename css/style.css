@@ -68,7 +68,7 @@ footer.page-footer {
 }
 
 .intro-text h5 {
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   font-weight: normal;
   display: inline-block;
 }
