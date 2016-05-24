@@ -1,314 +1,42 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
-  <title>Himanshu Chowdhary</title>
+---
+layout: post-index
+title: Latest Posts
+description: "Describe this nonsense."
+tags: [Jekyll, theme, themes, responsive, blog, modern]
+comments: false
+image:
+  feature: abstract-1.jpg
+  credit: dargadgetz
+  creditlink: http://www.dargadgetz.com/ios-7-abstract-wallpaper-pack-for-iphone-5-and-ipod-touch-retina/
+---
 
-  <!-- CSS  -->
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-  
-</head>
-<body>
+{% for post in paginator.posts %}
+<article class="hentry">
+  <header>
+    {% if post.image.feature %}
+      <div class="entry-image-index">
+        <a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}"><img src="{{ site.url }}/images/{{ post.image.feature }}" alt="{{ post.title }}"></a>
+      </div><!-- /.entry-image -->
+    {% endif %}
+    <div class="entry-meta">
+      <span class="entry-date date published updated"><time datetime="{{ post.date | date_to_xmlschema }}"><a href="{{ site.url }}{{ post.url }}">{{ post.date | date: "%B %d, %Y" }}</a></time></span><span class="author vcard"><span class="fn"><a href="{{ site.url }}/about/" title="About {{ site.owner.name }}">{{ site.owner.name }}</a></span></span>
+      {% if site.reading_time %}
+      <span class="entry-reading-time">
+        <i class="fa fa-clock-o"></i>
+        {% include read-time-index.html %}
+      </span><!-- /.entry-reading-time -->
+      {% endif %}
+    </div><!-- /.entry-meta -->
+    {% if post.link %}
+      <h1 class="entry-title"><a href="{{ site.url }}{{ post.url }}" class="permalink" rel="bookmark" title="{{ post.title }}"><i class="fa fa-bookmark"></i></a> <a href="{{ post.link }}">{{ post.title }}</a></h1>
+    {% else %}
+      <h1 class="entry-title"><a href="{{ site.url }}{{ post.url }}" rel="bookmark" title="{{ post.title }}" itemprop="url">{{ post.title }}</a></h1>
+    {% endif %}
+  </header>
+  <div class="entry-content">
+    {{ post.content }}
+  </div><!-- /.entry-content -->
+</article><!-- /.hentry -->
+{% endfor %}
 
-<!-- Google Tag Manager -->
-<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-MPH3TB"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-MPH3TB');</script>
-<!-- End Google Tag Manager -->
-
-  <div class="navbar-fixed">
-    <nav class="light-blue " role="navigation">
-    <!-- adding role="navigation is advised" -->
-      <div class="nav-wrapper container">
-        <a id="logo-container" href="#" class="brand-logo white-text">Home</a>
-        <ul class="right hide-on-med-and-down">
-          <li><a class="white-text" style="font-size: 18px;" href="#">Blog</a></li>
-          <li><a class="white-text" style="font-size: 18px;" href="#">Projects</a></li>
-        </ul>
-
-        <ul id="nav-mobile" class="side-nav light-blue">
-          <div class="col s12 m8 l6">
-            <div class="card-panel light-blue darken-2">
-            <!-- figure out a way to add home link withing this card panel -->
-              <div class="row ">
-                <div class="col s8 offset-s2 no-padding">
-                  <img src="images/ecoParkShades.jpg" alt="profile picture" class="circle responsive-img">
-                </div>
-                <div class="col s12">
-                  <span class="white-text" style="font-size: 20px;">
-                    Himanshu Chowdhary
-                  </span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <li><a class="white-text center-align" style="font-size: 20px" href="#">Blog</a></li>
-          <li><a class="white-text center-align" style="font-size: 20px" href="#">Projects</a></li>
-        </ul>
-        <a href="#" data-activates="nav-mobile" class="button-collapse" style="color: rgba(255, 255, 255, 1);"><i class="material-icons">menu</i></a>
-      </div>
-    </nav>
-  </div>
-
-  <div id="home" class="row">
-    <div class="intro-text light-blue z-depth-1">
-      <h2 class="white-text">HIMANSHU CHOWDHARY</h2>
-      <h5 class="white-text"> I transform numbers to <i>easy-to-understand </i> visualizatons.<!-- <br> <br> I analyze your business and offer insights to help you grow your business.--> </h5>
-    </div>
-  </div>
-
-  <div class="container">
-    <div class="section">
-      <ul class="tabs">
-        <li class="tab waves-effect waves-blue"><a  href="#education">Education</a></li>
-        <li class="tab waves-effect waves-blue"><a  href="#skills">Skills</a></li>
-        <li class="tab waves-effect waves-blue"><a  href="#experience">Experience</a></li>
-      </ul>
-      
-        <div class="section">
-          <div id="education" >
-            <div id="iit kgp" class="card-panel hoverable">
-              <div class="row">
-                <div class="col s12 m5 l4">
-                  <div class="card z-depth-1">
-                    <div class="card-image">
-                      <a href="http://www.iitkgp.ac.in/" target="_blank">
-                        <img class="" src="images/iitkgp.jpg" alt="iit kgp Picture">
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <div class="col s12 m7 l8">
-                  <div>
-                    <div class="card-content left-align">
-                      <p class="flow-text"> <b>Graduation, Class of 2015</b><br>
-                      <a href="http://www.iitkgp.ac.in/" target="_blank">IIT Kharagpur</a> is one of the premier colleges to study engineering in India. It offers graduation, post graduation and doctorate degrees in various fields of sciences and engineering. I completed my graduated with the specialization in Manufacturing Sc. and Engineering from the <a href="http://www.iitkgp.ac.in/academics/?page=acadunits&&dept=ME" target="_blank">Department of Mechanical Engineering</a>.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div id="nalanda" class="card-panel hoverable">
-              <div class="row ">
-                <div class="col s12 m5 push-m7 l4 push-l8">
-                  <div class="card z-depth-1">
-                    <div class="card-image">
-                      <a href="http://www.nalandaacademy.ac.in/" target="_blank">
-                        <img src="images/nalanda.png" alt="Nalanda Academy Picture">
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <div class="col s12 m7 pull-m5 l8 pull-l4">
-                  <div>
-                    <div class="card-content right-align">
-                      <p class="flow-text"><b>Higher Secondary, Class of 2011</b><br><a href="http://www.nalandaacademy.ac.in/" target="_blank">Nalanda Academy, Kota</a> is an excellent school providing <i>higher secondary education</i>. <a href="https://en.wikipedia.org/wiki/Kota,_Rajasthan" target="_blank">Kota</a>, a city in Rajasthan, India, which is primarily famous for many students flocking from various parts of the country with dreams to graduate from one of the premier engineering/medical colleges of India.</p>
-                    </div>
-                  </div>
-                </div>
-                
-              </div>
-            </div>
-
-            <div id="cms" class="card-panel hoverable">
-              <div class="row">
-                <div class="col s12 m5 l4">
-                  <div class="card z-depth-1">
-                    <div class="card-image">
-                      <a href="http://www.cmseducation.org/campuses/rdso/" target="_balnk">
-                        <img src="images/cms.gif" alt="CMS RDSO Picture">
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <div class="col s12 m7 l8">
-                  <div>
-                    <div class="card-content left-align">
-                      <p class="flow-text"><b>Senior Secondary, Class of 2009</b><br> <a href="http://www.cmseducation.org/" target="_blank">City Montessori School (CMS)</a>is a co-ed english medium private school that offers education from Pre-school up to 12<sup>th</sup> level in <a href="https://en.wikipedia.org/wiki/Lucknow" target="_blank">Lucknow</a>, India. It held the 2010-11 Guinness Book of World Records for the largest school.In 2016 its enrollment has reached nearly 52,000 pupils. CMS is affiliated to the Council for the <a href="https://en.wikipedia.org/wiki/Indian_School_Certificate" target="_blank">Indian School Certificate Examinations</a>.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-
-          <div id="skills">
-            <div id="languages" class="card-panel hoverable">
-              <h4 class="center-align orange-text ">Languages</h4>
-              <div class="container">
-                <h5>Python</h5>
-                <div class="progress orange lighten-4">
-                  <div class="determinate orange" style="width: 35%"></div>
-                </div>
-              </div>
-              <div class="container">
-                <h5>D3.js</h5>
-                <div class="progress orange lighten-4">
-                  <div class="determinate orange" style="width: 5%"></div>
-                </div>
-              </div>
-              <div class="container">
-                <h5>Java</h5>
-                <div class="progress orange lighten-4">
-                  <div class="determinate orange" style="width: 40%"></div>
-                </div>
-              </div>
-            </div>
-
-            <div id="web-development" class="card-panel hoverable">
-              <h4 class="center-align green-text">Web Development</h4>
-              <div class="container">
-                <h5>HTML</h5>
-                <div class="progress green lighten-4">
-                  <div class="determinate green" style="width: 75%"></div>
-                </div>
-              </div>
-              <div class="container">
-                <h5>CSS</h5>
-                <div class="progress green lighten-4">
-                  <div class="determinate green" style="width: 70%"></div>
-                </div>
-              </div>
-              <div class="container">
-                <h5>JavaScript</h5>
-                <div class="progress green lighten-4">
-                  <div class="determinate green" style="width: 10%"></div>
-                </div>
-              </div>
-              <div class="container">
-                <h5>jQuery</h5>
-                <div class="progress green lighten-4">
-                  <div class="determinate green" style="width: 5%"></div>
-                </div>
-              </div>
-              <div class="container">
-                <h5>SVG</h5>
-                <div class="progress green lighten-4">
-                  <div class="determinate green" style="width: 10%"></div>
-                </div>
-              </div>
-            </div>
-
-            <div id="languages" class="card-panel hoverable">
-              <h4 class="center-align deep-orange-text ">Cloud</h4>
-              <div class="container">
-                <h5>Microsoft Azure</h5>
-                <div class="progress deep-orange lighten-4">
-                  <div class="determinate deep-orange" style="width: 75%"></div>
-                </div>
-              </div>
-              <div class="container">
-                <h5>Amazon Web Services</h5>
-                <div class="progress deep-orange lighten-4">
-                  <div class="determinate deep-orange" style="width: 55%"></div>
-                </div>
-              </div>
-            </div>
-
-          </div> <!-- div of #skills-->
-
-
-          <div id="experience" class="">
-            <h5>Experience</h5>
-            <p>Experience page</p>
-          </div>
-        </div>
-    </div><!-- tab section -->
-  </div> <!-- tab container -->
-
-  
-
-  
-
-  <footer class="page-footer light-blue">
-    <div class="container">
-      <div class="row">
-        <div class="col l6 m10 offset-m1 s10 offset-s1 center-align">
-          <h5 id="about me" class="white-text">Discover who I am.</h5>
-          <p class="grey-text text-lighten-4"> Graduated in Mechanical Engineering and working as a developer. Who says college matters :D. An adventurous person, loves travelling my heart out. Curious about new things, won't think second time to try something new. Ardent lover of chocolates. Want to know more ? Why not drop a mail and we will meet over coffee. </p>          
-        </div>
-
-        <div class="col l3 m6 s12 center-align">
-          <h5 id="contact me" class="white-text">Reach out</h5>
-          <a href="mailto:himanshu.chowdhary.iitkgp@gmail.com" class="waves-effect waves-light btn lime accent-2 black-text"><i class="material-icons left">email</i>Write to me</a>
-        </div>
-
-        <div class="col l3 m6 s8 offset-s2">
-          <h5 id="follow me" class="white-text center-align">Connect</h5>
-            <div class="row valign-wrapper">
-              <div class="col s3">
-                <a href="https://www.facebook.com/hc10011" target="_blank">
-                  <div class="card hoverable">
-                    <div class="card-image">
-                      <img src="images/facebook-icon.png" alt="facebook-icon">
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div class="col s3">
-                <a href="https://twitter.com/enigmanshu" target="_blank">
-                  <div class="card hoverable">
-                    <div class="card-image">
-                      <img src="images/twitter-icon.png" alt="twitter-icon">
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div class="col s3">
-                <a href="https://github.com/enigmanshu" target="_blank">
-                  <div class="card hoverable">
-                    <div class="card-image">
-                      <img src="images/GitHub-Icon.png" alt="github-icon">
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div class="col s3">
-                <a href="https://www.linkedin.com/in/himanshu-chowdhary-a7001259" target="_blank">
-                  <div class="card hoverable">
-                    <div class="card-image">
-                      <img src="images/linkedin-icon.png" alt="linkedin-icon">
-                    </div>
-                  </div>
-                </a>
-              </div>
-            </div>
-        </div>
-      </div>
-    </div>
-    <div class="footer-copyright">
-      <div class="container">
-        © 2016 Himanshu Chowdhary
-      </div>
-    </div>
-  </footer>
-
-
-  <!--  Scripts [jQuery is required by Materialize to function] -->
-  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-  <script src="js/materialize.js"></script>
-  <script src="js/init.js"></script>
-
-  <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-75720561-1', 'auto');
-  ga('send', 'pageview');
-
-  </script>
-
-  </body>
-</html>
-
+{% include pagination.html %}
