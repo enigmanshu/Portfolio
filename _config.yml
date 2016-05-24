@@ -14,12 +14,12 @@ owner:
   bio:            "I am an analyst by profession and a designer/developer/pianist by passion."
   email:          himanshu.chowdhary.iitkgp@gmail.com
   # Social networking links used in footer. Update and remove as you like.
-  twitter:        
-  facebook:       
-  github:         
+  twitter: https://twitter.com/enigmanshu       
+  facebook: https://www.facebook.com/hc10011      
+  github: https://github.com/enigmanshu        
   stackexchange:  
-  linkedin:       
-  instagram:      
+  linkedin: https://www.linkedin.com/in/himanshu-chowdhary-a7001259      
+  instagram: https://www.instagram.com/enigmanshu/     
   flickr:         
   tumblr:         
   # google plus id, include the '+', eg +mmistakes
@@ -29,7 +29,7 @@ owner:
 background: 
 
 # Analytics and webmaster tools stuff goes here
-google_analytics:   
+google_analytics: UA-75720561-1  
 google_verify:      
 # https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
 bing_verify:         
