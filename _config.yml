@@ -11,7 +11,7 @@ url:
 owner:
   name:           Himanshu Chowdhary
   avatar:         avatar.jpg
-  bio:            "I am an analyst by profession and a designer/developer/pianist by passion."
+  bio:            "I am an analyst by profession and a designer developer pianist by passion."
   email:          himanshu.chowdhary.iitkgp@gmail.com
   # Social networking links used in footer. Update and remove as you like.
   twitter: https://twitter.com/enigmanshu       
@@ -19,7 +19,7 @@ owner:
   github: https://github.com/enigmanshu        
   stackexchange:  
   linkedin: https://www.linkedin.com/in/himanshu-chowdhary-a7001259      
-  instagram: https://www.instagram.com/enigmanshu/     
+  instagram: https://www.instagram.com/enigmanshu    
   flickr:         
   tumblr:         
   # google plus id, include the '+', eg +mmistakes
