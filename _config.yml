@@ -1,17 +1,17 @@
 title:            Himanshu Chowdhary
-description:      Hi. I am an analyst/designer/developer/pianist.
-disqus_shortname: 
+description:      Hi. I am an Analyst Designer DeveloperPianist.
+disqus_shortname: himanshuio
 reading_time:     true
 words_per_minute: 200
 # Your site's domain goes here (eg: //mmistakes.github.io, http://mademistakes.com, etc)
 # When testing locally leave blank or use http://localhost:4000
-url:
+url: #http://himanshu.io
 
 # Owner/author information
 owner:
   name:           Himanshu Chowdhary
   avatar:         avatar.jpg
-  bio:            #"I am an analyst by profession and a designer developer pianist by passion."
+  bio:            "Analyst Designer Developer Pianist"
   email:          himanshu.chowdhary.iitkgp@gmail.com
   # Social networking links used in footer. Update and remove as you like.
   twitter: https://twitter.com/enigmanshu       
