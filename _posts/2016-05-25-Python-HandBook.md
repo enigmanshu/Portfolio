@@ -20,12 +20,12 @@ image:
 `Map(float, ls)` – makes all  elements of the list as float
 `map(lambda x,y,z:x+y-z, a,b,c)` will apply the lambda function to all the lists a,b,c as the function accepts three parameters.
 * You can access the elements in a nested list as 2D or nD array simply by specifying the element as `ls[1][2]`
-* `b = [a[n][1] for n in xrange(3) if a[n][1] >60]` This type of `for` only works for conditional statements or nothing. This isn't like regular for loop. This is an example of **LIST COMPREHENSION**, which follow a syntax of `[*expression-involving-loop-variable* **for** *loop-variable* **in** *sequence*]`
+* `b = [a[n][1] for n in xrange(3) if a[n][1] >60]` This type of `for` only works for conditional statements or nothing. This isn't like regular for loop. This is an example of **LIST COMPREHENSION**, which follow a syntax of [*expression-involving-loop-variable* **for** *loop-variable* **in** *sequence*]
 * **filter(), map() and reduce()** are commonly used with lambda operator. These functions have accept parameters in the format **(func, list)**. This applies the function iteratively to all the elements of the list.
   * filter(), as the name suggests filters the list on the basis of of the given function
   * map() applies the function to all the elements of the list
   * reduce() reduces the list to a number based on the operation specified by the function
-* **NESTED LIST COMPREHENSIONS** `[*expression-involving-loop-variable* **for** *outer-loop-variable* **in** *outer-sequence* **for** *inner-loop-variable* **in** *inner-sequence* *optional-conditional-statement*]`
+* **NESTED LIST COMPREHENSIONS** [*expression-involving-loop-variable* **for** *outer-loop-variable* **in** *outer-sequence* **for** *inner-loop-variable* **in** *inner-sequence* *optional-conditional-statement*]
 * Use a **generator expression** if all you're doing is **iterating once**. If you want to **store and use the generated results**, then you're probably better off with a **list comprehension**
 * **any()** and **all()** check if any or all the values of a list, dict, str are *True* or not
 * **Text alignment** can be done by *ljust()*, *rjust()* and *center()*. `string.ljust(*width of the text space*,*text to be filled if not space*)`
@@ -33,11 +33,11 @@ image:
 * **Formatting Strings** Format strings contain “replacement fields” surrounded by curly braces {}. Anything that is not contained in braces is considered literal text, which is copied unchanged to the output. If you need to include a brace character in the literal text, it can be escaped by doubling: {{ and }}. Follow [this link](http://stackoverflow.com/questions/10411085/converting-integer-to-binary-in-python) for more info.
 * We already know how to substring a list using [:] syntax. We can also slice any list iteratively using [::2], which returns every second number of the list. [::-1] can be used to access the items in reverse order. It reverses the string but maintains the indexes. [a:b:-1] will be read as reverse the string and give the substring of the reversed string from index a to b, where the a,b index represent the original index labelling.
 * Python has inbuilt method to capitalize each word in a sentence.
-    * `string.title(" ihiuhij'u hihih hih")` will capitalize all the words but will also capitalize the alphabets after apostrophe. This problem can be solved using **string.capwords()** but this also runs into problem when we have words starting with numbers like "123abcd" will return the output "123Abcd". All of this problem can be solved using **"shjh".capitalize()**
-* "banana".count("an") returns the number of occurrences of the substring in the string. here the answer is two. Whereas "banan".count("ana") results in 1. Which means that .count method counts non overlapping occurrences
+    * `string.title(" ihiuhij'u hihih hih")` will capitalize all the words but will also capitalize the alphabets after apostrophe. This problem can be solved using `string.capwords()` but this also runs into problem when we have words starting with numbers like "123abcd" will return the output "123Abcd". All of this problem can be solved using `"shjh".capitalize()`
+* `"banana".count("an")` returns the number of occurrences of the substring in the string. here the answer is two. Whereas `"banan".count("ana")` results in 1. Which means that .count method counts non overlapping occurrences
 
 ## Sets
  Sets are unordered and non duplicate list of elements
 * **Counter** module from Collections counts the number of occurrence of each element and returns a dictionary with the elements as its keys and the number of occurrences as the values.
  * It has various methods.
- * There is one method of it, which returns the list of tuples of the the elements with occurrences. Counter.most_common([n])[i;j]. Returns a sub list of n most common elements
+ * There is one method of it, which returns the list of tuples of the the elements with occurrences. `Counter.most_common([n])[i;j]` Returns a sub list of n most common elements
