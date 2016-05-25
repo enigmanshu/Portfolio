@@ -40,6 +40,6 @@ image:
 
 ## Sets
 Sets are unordered and non duplicate list of elements.
-* **Counter** module from Collections counts the number of occurrence of each element and returns a dictionary with the elements as its keys and the number of occurrences as the values.
+* Counter module from Collections counts the number of occurrence of each element and returns a dictionary with the elements as its keys and the number of occurrences as the values.
     * It has various methods.
     * There is one method of it, which returns the list of tuples of the the elements with occurrences. `Counter.most_common([n])[i;j]` Returns a sub list of n most common elements
