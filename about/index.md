@@ -7,6 +7,7 @@ comments: false
 modified: 2016-04-04
 ---
 I am a designer who eventually turned towards coding. Well there is famous idiom which says:
+
 > A picture is worth a thousand words.
 
 I work on communicating as much as possible by design and use less words or numbers for that matter.
