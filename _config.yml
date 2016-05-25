@@ -5,7 +5,7 @@ reading_time:     true
 words_per_minute: 200
 # Your site's domain goes here (eg: //mmistakes.github.io, http://mademistakes.com, etc)
 # When testing locally leave blank or use http://localhost:4000
-url: #http://himanshu.io
+url: http://himanshu.io
 
 # Owner/author information
 owner:
@@ -14,25 +14,25 @@ owner:
   bio:            "Analyst | Designer | Developer | Pianist"
   email:          himanshu.chowdhary.iitkgp@gmail.com
   # Social networking links used in footer. Update and remove as you like.
-  twitter: https://twitter.com/enigmanshu       
-  facebook: https://www.facebook.com/hc10011      
-  github: https://github.com/enigmanshu        
-  stackexchange:  
-  linkedin: https://www.linkedin.com/in/himanshu-chowdhary-a7001259      
-  instagram: https://www.instagram.com/enigmanshu    
-  flickr:         
-  tumblr:         
+  twitter: https://twitter.com/enigmanshu
+  facebook: https://www.facebook.com/hc10011
+  github: https://github.com/enigmanshu
+  stackexchange:
+  linkedin: https://www.linkedin.com/in/himanshu-chowdhary-a7001259
+  instagram: https://www.instagram.com/enigmanshu
+  flickr:
+  tumblr:
   # google plus id, include the '+', eg +mmistakes
   google_plus:
 
 # Background image to be tiled on all pages
-background: 
+background:
 
 # Analytics and webmaster tools stuff goes here
-google_analytics: UA-75720561-1  
-google_verify:      
+google_analytics: UA-75720561-1
+google_verify:
 # https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
-bing_verify:         
+bing_verify:
 
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 timezone:    Asia/Kolkata
