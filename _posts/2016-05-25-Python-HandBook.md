@@ -6,6 +6,8 @@ modified: 2015-05-25
 tags: [python, handbook]
 image:
   feature: python-love.png
+  credit: nylas.com
+  creditlink: https://nylas.com/blog/packaging-deploying-python/
 ---
 
 
