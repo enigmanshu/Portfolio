@@ -37,7 +37,7 @@ image:
 * `"banana".count("an")` returns the number of occurrences of the substring in the string. here the answer is two. Whereas `"banan".count("ana")` results in 1. Which means that .count method counts non overlapping occurrences
 
 ## Sets
- Sets are unordered and non duplicate list of elements
+Sets are unordered and non duplicate list of elements.
 * **Counter** module from Collections counts the number of occurrence of each element and returns a dictionary with the elements as its keys and the number of occurrences as the values.
   * It has various methods.
   * There is one method of it, which returns the list of tuples of the the elements with occurrences. `Counter.most_common([n])[i;j]` Returns a sub list of n most common elements
