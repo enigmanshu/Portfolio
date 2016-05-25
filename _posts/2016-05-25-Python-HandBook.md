@@ -25,7 +25,7 @@ image:
   * filter(), as the name suggests filters the list on the basis of of the given function
   * map() applies the function to all the elements of the list
   * reduce() reduces the list to a number based on the operation specified by the function
-* **NESTED LIST COMPREHENSIONS** [*expression-involving-loop-variable* **for** *outer-loop-variable* **in** *outer-sequence* **for** *inner-loop-variable* **in** *inner-sequence* *optional-conditional-statement*]
+* **Nested List Comprehensions** [*expression-involving-loop-variable* **for** *outer-loop-variable* **in** *outer-sequence* **for** *inner-loop-variable* **in** *inner-sequence* *optional-conditional-statement*]
 * Use a **generator expression** if all you're doing is **iterating once**. If you want to **store and use the generated results**, then you're probably better off with a **list comprehension**
 * **any()** and **all()** check if any or all the values of a list, dict, str are *True* or not
 * **Text alignment** can be done by *ljust()*, *rjust()* and *center()*. `string.ljust(*width of the text space*,*text to be filled if not space*)`
@@ -39,5 +39,5 @@ image:
 ## Sets
  Sets are unordered and non duplicate list of elements
 * **Counter** module from Collections counts the number of occurrence of each element and returns a dictionary with the elements as its keys and the number of occurrences as the values.
- * It has various methods.
- * There is one method of it, which returns the list of tuples of the the elements with occurrences. `Counter.most_common([n])[i;j]` Returns a sub list of n most common elements
+  * It has various methods.
+  * There is one method of it, which returns the list of tuples of the the elements with occurrences. `Counter.most_common([n])[i;j]` Returns a sub list of n most common elements
