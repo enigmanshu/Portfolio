@@ -33,13 +33,13 @@ image:
 * **Text alignment** can be done by *ljust()*, *rjust()* and *center()*. `string.ljust(*width of the text space*,*text to be filled if not space*)`
 * The **textwrap module** provides two convenient functions: **wrap()** and **fill()**. `textwrap.wrap(string,width)` accepts a string and the width and returns a list containing string elements of the specified width. `textwrap.fill()` returns a wrapped text.
 * **Formatting Strings** Format strings contain “replacement fields” surrounded by curly braces {}. Anything that is not contained in braces is considered literal text, which is copied unchanged to the output. If you need to include a brace character in the literal text, it can be escaped by doubling: {{ and }}. Follow [this link](http://stackoverflow.com/questions/10411085/converting-integer-to-binary-in-python) for more info.
-* We already know how to substring a list using [:] syntax. We can also slice any list iteratively using [::2], which returns every second number of the list. [::-1] can be used to access the items in reverse order. It reverses the string but maintains the indexes. [a:b:-1] will be read as reverse the string and give the substring of the reversed string from index a to b, where the a,b index represent the original index labelling.
+* We already know how to substring a list using [:] syntax. We can also slice any list iteratively using [::2], which returns every second number of the list. [::-1] can be used to access the items in reverse order. It reverses the string but maintains the indexes. [a:b:-1] will be read as reverse the string and give the substring of the reversed string from index a to b, where the a,b index represent the original index labeling.
 * Python has inbuilt method to capitalize each word in a sentence.
     * `string.title(" ihiuhij'u hihih hih")` will capitalize all the words but will also capitalize the alphabets after apostrophe. This problem can be solved using `string.capwords()` but this also runs into problem when we have words starting with numbers like "123abcd" will return the output "123Abcd". All of this problem can be solved using `"shjh".capitalize()`
 * `"banana".count("an")` returns the number of occurrences of the substring in the string. here the answer is two. Whereas `"banan".count("ana")` results in 1. Which means that .count method counts non overlapping occurrences
 
 ## Sets
 Sets are unordered and non duplicate list of elements.
-* Counter module from Collections counts the number of occurrence of each element and returns a dictionary with the elements as its keys and the number of occurrences as the values.
+* **Counter** module from Collections counts the number of occurrence of each element and returns a dictionary with the elements as its keys and the number of occurrences as the values.
     * It has various methods.
     * There is one method of it, which returns the list of tuples of the the elements with occurrences. `Counter.most_common([n])[i;j]` Returns a sub list of n most common elements
