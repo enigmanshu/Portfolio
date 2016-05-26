@@ -36,13 +36,12 @@ mult3 = filter(lambda x: x % 3 == 0, [1, 2, 3, 4, 5, 6, 7, 8, 9])
 `Map(float, ls)` – makes all  elements of the list as float
 `map(lambda x,y,z:x+y-z, a,b,c)` will apply the lambda function to all the lists a,b,c as the function accepts three parameters.
 * You can access the elements in a nested list as 2D or nD array simply by specifying the element as `ls[1][2]`
-*
+* This type of `for` only works for conditional statements. This isn't a regular for loop. This is an example of **LIST COMPREHENSION**, which follow a syntax of [*expression-involving-loop-variable* **for** *loop-variable* **in** *sequence*]
 
 ```
 b = [a[n][1] for n in xrange(3) if a[n][1] >60]
 ```
 
- This type of `for` only works for conditional statements or nothing. This isn't like regular for loop. This is an example of **LIST COMPREHENSION**, which follow a syntax of [*expression-involving-loop-variable* **for** *loop-variable* **in** *sequence*]
 * **filter(), map() and reduce()** are commonly used with lambda operator. These functions have accept parameters in the format **(func, list)**. This applies the function iteratively to all the elements of the list.
   * filter(), as the name suggests filters the list on the basis of of the given function
   * map() applies the function to all the elements of the list
