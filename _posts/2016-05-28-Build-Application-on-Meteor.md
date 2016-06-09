@@ -1,5 +1,5 @@
 ---
-layout: draft
+layout: post
 title: Chat Application with Meteor
 description: "Concepts and lessons that I learned while building chat application on meteor."
 modified: 2015-05-28
@@ -143,9 +143,9 @@ Now we'll be creating a signup form where we'll be asking users email address, p
 ```
 Restricting the entered username to only wanted literals. So what are wanted literals and how specifically do we want. So we want our code to do the followings:
 * remove any punctuation like `#$@%`
-* make sure all are lowecased
+* make sure all are lowercased
 * remove all white spaces.
-Writing the santiize username code at /client/modules/sanitize-username.js.
+Writing the sanitize username code at /client/modules/sanitize-username.js.
 
 ```
 export default function(value) {
@@ -174,4 +174,4 @@ Template.signup.events({
 });
 ```
 Notice the keyup event on our username field, it'll update the value of as the user types with the sanitized version of username.
-Notice the first line, where we are importing the signup module, but we didn't write it. Actually
+Notice the first line, where we are importing the signup module, but we didn't write it.
